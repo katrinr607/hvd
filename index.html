@@ -2,71 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Typography Portrait</title>
+    <title>Readable Typography Portrait</title>
     <style>
         body {
-            background-color: #000; /* Dark background is essential */
+            background-color: #050505; /* Slightly off-black helps readability */
             margin: 0;
             display: flex;
             justify-content: center;
-            overflow-x: hidden;
         }
 
         .portrait {
-            /* 1. LINK YOUR IMAGE HERE */
+            /* 1. THE IMAGE */
             background-image: url('dni.jpg'); 
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* This keeps the face still as you scroll */
+            background-attachment: fixed;
 
-            /* 2. THE TYPOGRAPHY MASK */
+            /* 2. THE MASK */
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent; /* Makes the text invisible so the photo shows through */
+            /* Using a tiny bit of opacity makes the letters pop against the dark background */
+            color: rgba(255, 255, 255, 0.1); 
 
-            /* 3. STYLING TO MATCH YOUR SCREENSHOT */
-            font-family: 'Arial Black', sans-serif;
-            font-weight: 900;
-            font-size: 12px;
-            line-height: 1.1;
+            /* 3. READABILITY SETTINGS */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cleaner than Arial Black */
+            font-weight: 700;
+            font-size: 18px; /* Larger size = more readable */
+            line-height: 1.2;
             text-align: justify;
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-            width: 90vw;
+            text-transform: none; /* Sentence case is easier to read than all caps */
+            letter-spacing: 0.5px; /* Adds breathing room between letters */
+            width: 85vw;
+            padding: 50px 0;
+
+            /* 4. IMAGE FILTER */
+            /* We boost contrast but lower brightness to make the "white" parts of the face 
+               turn into "readable white text" */
+            filter: grayscale(1) contrast(3) brightness(0.6);
             
-            /* 4. FILTERS (Turns your color photo into B&W high-contrast) */
-            filter: grayscale(1) contrast(2.5) brightness(0.8);
+            /* 5. SMOOTHING */
+            -webkit-font-smoothing: antialiased;
         }
     </style>
 </head>
 <body>
 
     <div class="portrait">
-        Lights go down, and the night is calling to me, yeah I hear voices singing songs in the street 
-        And I know that we won't be going home for so long, for so long But I know that I won't be on my own, yeah
-        I love this feeling and Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh) 
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-        Late night spaces With all our friends, you and me, yeah Love these faces Just like how it used to be
-        And we won't be going home For so long, for so long But I know, I won't be on my own, I'm feeling like
-        Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh)
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-        Lights go down, and the night is calling to me, yeah I hear voices singing songs in the street 
-        And I know that we won't be going home for so long, for so long But I know that I won't be on my own, yeah
-        I love this feeling and Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh) 
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-        Late night spaces With all our friends, you and me, yeah Love these faces Just like how it used to be
-        And we won't be going home For so long, for so long But I know, I won't be on my own, I'm feeling like
-        Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh)
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-        Lights go down, and the night is calling to me, yeah I hear voices singing songs in the street 
-        And I know that we won't be going home for so long, for so long But I know that I won't be on my own, yeah
-        I love this feeling and Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh) 
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-        Late night spaces With all our friends, you and me, yeah Love these faces Just like how it used to be
-        And we won't be going home For so long, for so long But I know, I won't be on my own, I'm feeling like
-        Right now I wish you were here with me (Oh-ooh) 'Cause right now everything is new to me (Oh-ooh)
-        You know I can't fight the feeling And every night I feel it Right now I wish you were here with me (Oh-ooh)
-    </div>
+        Lights go down, and the night is calling to me, yeah. 
+        I hear voices singing songs in the street. 
+        And I know that we won't be going home for so long, for so long. 
+        But I know that I won't be on my own, yeah. 
+        I love this feeling and right now I wish you were here with me. 
+        'Cause right now everything is new to me. 
+        You know I can't fight the feeling, and every night I feel it. 
+        Right now I wish you were here with me...
+        </div>
 
 </body>
 </html>
