@@ -2,157 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Readable Typography Portrait</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Typography Letter</title>
     <style>
         body {
-            background-color: #050505; /* Slightly off-black helps readability */
+            background-color: #000;
             margin: 0;
             display: flex;
             justify-content: center;
+            /* Allowing scrolling so you can read the whole letter */
+            overflow-y: auto; 
         }
 
         .portrait {
-            /* 1. THE IMAGE */
+            /* 1. IMAGE SOURCE */
             background-image: url('dni.jpg'); 
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: fixed; /* Keep face still while text scrolls */
 
             /* 2. THE MASK */
             -webkit-background-clip: text;
             background-clip: text;
-            /* Using a tiny bit of opacity makes the letters pop against the dark background */
-            color: rgba(255, 255, 255, 0.1); 
+            color: transparent;
 
-            /* 3. READABILITY SETTINGS */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cleaner than Arial Black */
-            font-weight: 700;
-            font-size: 18px; /* Larger size = more readable */
-            line-height: 1.2;
-            text-align: justify;
-            text-transform: none; /* Sentence case is easier to read than all caps */
-            letter-spacing: 0.5px; /* Adds breathing room between letters */
+            /* 3. READABILITY & LETTER STYLING */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 18px;          /* Larger for readability */
+            line-height: 1.6;         /* Wider spacing makes it look like a letter */
+            text-align: left;         /* Left aligned is much easier to read than justified */
             width: 85vw;
-            padding: 50px 0;
-
-            /* 4. IMAGE FILTER */
-            /* We boost contrast but lower brightness to make the "white" parts of the face 
-               turn into "readable white text" */
-            filter: grayscale(1) contrast(3) brightness(0.6);
+            max-width: 900px;
+            padding: 100px 20px;
+            font-weight: 600;
             
-            /* 5. SMOOTHING */
-            -webkit-font-smoothing: antialiased;
+            /* 4. PHOTO FILTERS */
+            /* Adjusted contrast so the white text is crisp but the photo is clear */
+            filter: grayscale(1) contrast(4) brightness(0.7);
+            
+            /* Preserves the line breaks from the lyrics below */
+            white-space: pre-line; 
         }
     </style>
 </head>
 <body>
 
     <div class="portrait">
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        Lights go down, and the night is calling to me, yeah. 
-        I hear voices singing songs in the street. 
-        And I know that we won't be going home for so long, for so long. 
-        But I know that I won't be on my own, yeah. 
-        I love this feeling and right now I wish you were here with me. 
-        'Cause right now everything is new to me. 
-        You know I can't fight the feeling, and every night I feel it. 
-        Right now I wish you were here with me...
-        </div>
+        Baby, I'm here, I'm here to stay, I ain't going nowhere
+        I know you're scared 'cause you've been hurt, baby, it's alright
+        Lost in your eyes every time that you look in mine
+        Promise to be all that you need, I won't leave you, baby
+        No, 'cause I just wanna love you
+        I will never ever put nobody up above you
+        I just wanna kiss you, baby
+        I just wanna hug you 'til the end, baby, 'til the end
+
+        'Cause I'm right here, ain't nobody gotta hold ya
+        'Cause I'm right here, ain't nobody gon' control ya
+        'Cause I'm right right here, yeah yeah
+
+        Say you'll be mine, say we'll be fine, say we'll be together
+        Selfish of me to ask, since I be the reason we don't last forever
+        Wished that you knew all that I do to make this thing go right
+
+        And I say, good girl's got her mind right
+        She been raised right, being patient I know you waiting
+        Waiting on the good things when the time's right
+        You should let me get to know you, baby
+
+        Those innocent eyes, that smile on your face
+        Makes it easy to trust you
+        If they only knew, the girl with the tattoo like I do
+        Just don't lose yourself along the way
+
+        Through drought and famine, natural disasters
+        My baby has been around for me
+        Kingdoms have fallen, angels be calling
+        None of that could ever make me leave
+        Every time I look into your eyes I see it
+        You're all I need
+
+        Even when the sky comes falling
+        Even when the sun don't shine
+        I got faith in you and I
+        So put your pretty little hand in mine
+        'Cause this love is a sure thing
+
+        Valentina, baby, I only need one moment of time
+        To make you feel away
+        From the first time I looked in your eyes
+        I knew that I would find a way to make you mine...
+
+        Catch me, I've fallen in love for the first time
+        For you I drop the tough guy shit
+        Thinking 'bout you, thinking 'bout you
+        Damn it feel good to have you
+        
+        You are now the reason that I fight
+        I ain't never did nothing this right in my whole life
+        Am I worthy of this gift?
+        Am I strong enough to lift?
+        Someone more important than me?
+        
+        I wanna cry, and I ain't even tryna fight it
+        Don't wanna die, 'cause now you're here
+        And I just wanna be right by your side
+        I never felt so alive.
+    </div>
 
 </body>
 </html>
